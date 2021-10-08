@@ -5,7 +5,8 @@ static const Block blocks[] = {
 
 	{" ", "classchange",					1,		0},
 	{"🔋 ", "echo $(cat /sys/class/power_supply/BAT0/capacity)%",					20,		0},
-	{"🕒 ", "date '+%a %b %d │ %I:%M:%S %p'",					1,		0},
+	{"", "date '+%a %b %d'",					100,		0},
+	{"🕒 ", "date '+%I:%M %p '",					5,		0},
 };
 
 //sets delimeter between status commands. NULL character ('\0') means no delimeter.

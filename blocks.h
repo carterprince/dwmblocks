@@ -5,6 +5,7 @@ static const Block blocks[] = {
 
 	{"", "song",							5,		10},
 	{"", "classchange",					1,		0},
+	{"", "printf \" \"; echo \"100 - $(top -bn2 | head -3 | tail -1 | cut -d',' -f4 | sed 's,id,,g' | xargs)\" | bc | tr -d '\n'; echo %",	12,		0},
 	{"", "echo \" ⚡ $(cat /sys/class/power_supply/BAT0/capacity)%\"",					20,		0},
 	{" ", "date '+%a %b %d'",					100,		0},
 	{" 🕒 ", "date '+%I:%M %p '",					5,		0},

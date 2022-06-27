@@ -4,10 +4,9 @@ static const Block blocks[] = {
 	//{"", "free -h | awk '/^Mem/ { print $3\"/\"$2 }' | sed s/i//g",	30,		0},
 
 	//{"", "xmr",							1000,		0},
-	{" ", "wordle",							20,		10},
-	{"", "classchange",					1,		0},
-	{" ", "volume get; printf '%%'",					100,		12},
+	{" ", "volume get",					100,		12},
 	{" ", "date '+%a %b %d'",					200,		0},
+	{" ", "temp",					200,		0},
 	{" 🕒 ", "date '+%I:%M %p '",					5,		0},
 };
 
